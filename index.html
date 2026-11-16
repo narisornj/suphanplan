@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>แพลนเช้า นนทบุรี → สามชุก → หนองหญ้าไซ (สุพรรณบุรี)</title>
+<style>
+  :root{
+    --ink:#1f2a24; --muted:#5d6b62; --line:#dfe6df;
+    --green:#2f6b4f; --green-soft:#eef4ef; --gold:#b8862b; --bg:#fbfaf6;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Noto Sans Thai","Sarabun","Leelawadee UI","Tahoma",system-ui,sans-serif;
+    line-height:1.65; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:900px; margin:0 auto; padding:28px 20px 60px}
+  header{
+    background:linear-gradient(135deg,#2f6b4f,#3f8663 55%,#5f9b6f);
+    color:#fff; border-radius:18px; padding:26px 26px 22px; margin-bottom:22px;
+  }
+  header .kicker{font-size:.8rem; letter-spacing:.14em; text-transform:uppercase; opacity:.85; margin:0 0 8px}
+  header h1{margin:0 0 10px; font-size:1.6rem; line-height:1.35}
+  header p{margin:0; opacity:.95; font-size:.95rem}
+  .facts{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px}
+  .fact{background:rgba(255,255,255,.16); border-radius:999px; padding:5px 13px; font-size:.85rem}
+  h2{font-size:1.12rem; margin:32px 0 12px; padding-left:11px; border-left:4px solid var(--gold)}
+  .lede{color:var(--muted); font-size:.93rem; margin:0 0 14px}
+  .timeline{border-left:2px dashed #c9d6cc; margin:0 0 8px 8px; padding-left:20px; list-style:none}
+  .timeline li{position:relative; padding:0 0 18px}
+  .timeline li::before{
+    content:""; position:absolute; left:-27px; top:7px; width:11px; height:11px;
+    background:#fff; border:3px solid var(--green); border-radius:50%;
+  }
+  .timeline .t{font-weight:700; color:var(--green); font-variant-numeric:tabular-nums}
+  .timeline .d{display:block; color:var(--muted); font-size:.9rem}
+  .cards{display:grid; gap:14px}
+  @media(min-width:680px){ .cards{grid-template-columns:1fr 1fr} }
+  .card{
+    background:#fff; border:1px solid var(--line); border-radius:14px; padding:16px 17px;
+    display:flex; flex-direction:column; gap:8px;
+  }
+  .card .top{display:flex; justify-content:space-between; align-items:baseline; gap:10px}
+  .card h3{margin:0; font-size:1.02rem}
+  .num{
+    flex:none; width:24px; height:24px; border-radius:50%; background:var(--green-soft);
+    color:var(--green); font-size:.78rem; font-weight:700; display:grid; place-items:center;
+  }
+  .tag{
+    display:inline-block; font-size:.72rem; padding:2px 9px; border-radius:999px;
+    background:var(--green-soft); color:var(--green); margin-right:4px; white-space:nowrap;
+  }
+  .tag.new{background:#fdf3e0; color:#9a6b1a}
+  .card p{margin:0; font-size:.9rem; color:#3a4740}
+  .meta{font-size:.83rem; color:var(--muted); display:flex; flex-direction:column; gap:3px; margin-top:auto}
+  .meta b{color:var(--ink); font-weight:600}
+  a{color:var(--green); text-decoration:none; border-bottom:1px solid #c5d8ca}
+  a:hover{border-bottom-color:var(--green)}
+  .plan{
+    background:#fff; border:1px solid var(--line); border-left:5px solid var(--gold);
+    border-radius:12px; padding:16px 18px; margin-bottom:12px;
+  }
+  .plan h3{margin:0 0 6px; font-size:1rem}
+  .plan ol{margin:6px 0 0; padding-left:20px; font-size:.92rem}
+  .plan li{margin-bottom:4px}
+  .warn{
+    background:#fff4f2; border:1px solid #f3d3cc; border-radius:12px; padding:14px 16px;
+    font-size:.9rem; margin-top:16px;
+  }
+  .warn b{color:#a4402a}
+  .btns{display:flex; flex-wrap:wrap; gap:10px; margin-top:8px}
+  .btn{
+    display:inline-block; background:var(--green); color:#fff; padding:10px 18px;
+    border-radius:10px; font-size:.9rem; font-weight:600; border:0;
+  }
+  .btn:hover{background:#255640}
+  .btn.ghost{background:#fff; color:var(--green); border:1px solid #c5d8ca}
+  .pins{list-style:none; padding:0; margin:0; display:grid; gap:8px}
+  .pins li{
+    background:#fff; border:1px solid var(--line); border-radius:10px;
+    padding:10px 14px; display:flex; justify-content:space-between;
+    align-items:center; gap:12px; font-size:.9rem;
+  }
+  .pins .go{
+    flex:none; font-size:.8rem; font-weight:600; color:var(--green);
+    border:1px solid #c5d8ca; border-radius:8px; padding:5px 11px; white-space:nowrap;
+  }
+  .pins .go:hover{background:var(--green-soft); border-bottom-color:#c5d8ca}
+  footer{margin-top:34px; font-size:.8rem; color:var(--muted); border-top:1px solid var(--line); padding-top:14px}
+  @media print{
+    body{background:#fff}
+    header{background:#2f6b4f !important; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+    .card,.plan{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="kicker">Morning Road Trip · Suphan Buri</p>
+  <h1>กรมการค้าต่างประเทศ (นนทบุรี) → สามชุก → หนองหญ้าไซ</h1>
+  <p>แพลนครึ่งวันเช้า สายคาเฟ่ + ตลาดเก่า เรียงตามลำดับการขับ ไม่ย้อนเส้น</p>
+  <div class="facts">
+    <span class="fact">รวม ~138 กม.</span>
+    <span class="fact">ขับล้วน ~2 ชม.</span>
+    <span class="fact">แวะ 3–4 จุด · ถึงปลายทาง ~11:30</span>
+    <span class="fact">เส้นทาง: 340 → 321 → 3365</span>
+  </div>
+</header>
+
+<h2>ทำไมต้องวางแพลนแบบนี้</h2>
+<p class="lede">
+  พิกัดปลายทาง (14.781913, 99.974062) อยู่ ต.หนองหญ้าไซ ทางตะวันตกของ อ.สามชุก ประมาณ 15 กม.
+  เส้นทางที่สั้นและตรงที่สุดคือ 340 (บางบัวทอง–สุพรรณบุรี) แล้วขึ้นเหนือผ่าน อ.ศรีประจันต์ → อ.สามชุก
+  แล้วเลี้ยวซ้ายเข้า 3365 ไปทางหนองหญ้าไซ — แปลว่า <b>ศรีประจันต์กับสามชุกคือจุดที่ “แวะได้โดยไม่เสียระยะ”</b>
+  และทั้งสองจุดเป็นของกิน/คาเฟ่ที่เปิดเช้าอยู่แล้ว
+</p>
+
+<h2>ไทม์ไลน์แนะนำ</h2>
+<ul class="timeline">
+  <li><span class="t">06:45</span> ออกจากกรมการค้าต่างประเทศ นนทบุรี → ทางหลวง 340
+      <span class="d">ช่วงนี้ยาว ~1 ชม. 20 น. แวะปั๊มเอาแค่กาแฟถ้วยเดียวพอ เดี๋ยวมีของดีรอ</span></li>
+  <li><span class="t">08:10–09:00</span> <b>954 Cafe'</b> + ตลาดเก่าศรีประจันต์ — อาหารเช้า/กาแฟริมแม่น้ำท่าจีน
+      <span class="d">เปิด 07:30 (อ.–ศ.) / 08:00 (ส.–อา.) · ปิดวันจันทร์</span></li>
+  <li><span class="t">09:20–10:15</span> <b>ตลาดร้อยปีสามชุก</b> — เดินตลาดไม้เก่า ของกินโบราณ ถ่ายรูป
+      <span class="d">เช้าคนน้อย ร้านเริ่มเปิดครบราว 09:00 · จอดรถที่วัด/ลานจอดท้ายตลาด</span></li>
+  <li><span class="t">10:20–11:10</span> <b>Homie's Cafe</b> หรือ <b>39 Café by Arano</b> — นั่งพักก่อนไปต่อ
+      <span class="d">อยู่ห่างตลาด 5–8 นาที ขับออกไปทางเดียวกับปลายทาง</span></li>
+  <li><span class="t">11:20–11:35</span> ถึงจุดหมาย 14.781913, 99.974062
+      <span class="d">จากสามชุกเข้า 3365 อีก ~15 กม.</span></li>
+</ul>
+
+<h2>8 ตัวเลือกเรียงตามเส้นทาง</h2>
+
+<div class="cards">
+
+  <div class="card">
+    <div class="top"><h3>1. 954 Cafe' x กินข้าวกับจอย</h3><span class="num">1</span></div>
+    <span class="tag new">คาเฟ่ในตลาดเก่า</span><span class="tag">เปิดเช้า</span>
+    <p>คาเฟ่เล็กในบ้านไม้ริมแม่น้ำท่าจีน กลางตลาดเก่าศรีประจันต์ เงียบ ลมดี มีอาหารเช้า–กลางวันราคาหลักสิบ และมุม workshop (ร้อยลูกปัด/ระบายสี) เหมาะเป็น “จุดเริ่มมื้อเช้า” ที่มีบรรยากาศ ไม่ใช่แค่ปั๊มน้ำมัน</p>
+    <div class="meta">
+      <span><b>เปิด</b> อ.–ศ. 07:30–18:00 · ส.–อา. 08:00–19:00 · <b>ปิดจันทร์</b></span>
+      <span><b>ทำเล</b> ตลาดเก่าศรีประจันต์ (อ้อมจากถนนหลัก ~2 กม.)</span>
+      <span><a href="https://www.google.com/maps/search/?api=1&query=954+Cafe+%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%8C+%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5">เปิดใน Google Maps</a></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="top"><h3>2. ตลาดเก่าศรีประจันต์</h3><span class="num">2</span></div>
+    <span class="tag">ฟรี</span><span class="tag">เดิน 15 นาที</span>
+    <p>ตลาดไม้เก่าริมน้ำ ขนาดเล็กกว่าเมิงราย/สามชุกมาก แต่เงียบกว่าและยังไม่商业化 ใช้เวลาเดินสั้น ๆ ต่อจาก 954 Cafe' ได้เลย — เป็นของแถมที่ไม่ต้องลงทุนเวลา</p>
+    <div class="meta">
+      <span><b>เหมาะ</b> เดินหลังมื้อเช้า ประมาณ 08:45–09:10</span>
+      <span><b>หมายเหตุ</b> บางวันร้านเปิดไม่ครบ · ช่วงเช้าแสงสวยทิศตะวันออก</span>
+      <span><a href="https://www.google.com/maps/search/?api=1&query=%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%8C+%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5">เปิดใน Google Maps</a></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="top"><h3>3. ตลาดร้อยปีสามชุก</h3><span class="num">3</span></div>
+    <span class="tag">ไฮไลต์</span><span class="tag">เช้า = คนน้อย</span>
+    <p>ตลาดไม้โบราณ 100 ปี ริมแม่น้ำท่าจีน เป็นจุดที่ “เช้าคือช่วงดีที่สุด” จริง ๆ เพราะร้านเริ่มเปิดครบราว 09:00 และนักท่องเที่ยวสายบ่ายยังไม่มา เดินได้สบาย ถ่ายรูปสะดวก ของอร่อยที่ควรลอง: ก๋วยเตี๋ยวโบราณ ขนมเบื้อง ของฝากปลา/ผลไม้ดอง</p>
+    <div class="meta">
+      <span><b>ควรเผื่อเวลา</b> 45–60 นาที</span>
+      <span><b>จอดรถ</b> ลานท้ายตลาด / วัดใกล้เคียง</span>
+      <span><a href="https://www.google.com/maps/search/?api=1&query=%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%9B%E0%B8%B5%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%B8%E0%B8%81+%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5">เปิดใน Google Maps</a></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="top"><h3>4. Homie's Cafe</h3><span class="num">4</span></div>
+    <span class="tag new">เปิดใหม่ 2025</span><span class="tag">เนินหญ้า</span>
+    <p>บ้านสีขาวหลังเล็กบนเนินหญ้าเขียว ถ่ายรูปสวยแทบทุกมุม (รวมห้องน้ำ) เครื่องดื่ม–ขนมราคาไม่แรง pet friendly ช่วงปลายฝน–ต้นหนาวมีทุ่งดอกปอเทืองเหลืองข้างร้านด้วย</p>
+    <div class="meta">
+      <span><b>เปิด</b> 09:30–17:30 · <b>ปิดพุธ</b></span>
+      <span><b>ทำเล</b> ต.หนองผักนาก อ.สามชุก — ห่างตลาดร้อยปี ~5 กม.</span>
+      <span><a href="https://www.google.com/maps/search/?api=1&query=Homie%27s+Cafe+%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%B8%E0%B8%81+%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5">เปิดใน Google Maps</a></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="top"><h3>5. 39 Café by Arano</h3><span class="num">5</span></div>
+    <span class="tag new">เปิดใหม่</span><span class="tag">เปิด 08:00</span>
+    <p>คาเฟ่โปร่ง ๆ ริมถนนสายสุพรรณ–ชัยนาท (ทางเดียวกับที่ขับผ่าน) กาแฟเข้มถูกใจสายดาร์ก มี craft chocolate และโกโก้เข้มเป็นจุดขาย จุดนี้คือตัวเลือก “เช้าสุด” ในสามชุก เพราะเปิด 08:00 ทุกวัน</p>
+    <div class="meta">
+      <span><b>เปิด</b> ทุกวัน ~08:00–17:00</span>
+      <span><b>ทำเล</b> ริมถนนสายสุพรรณ–ชัยนาท อ.สามชุก (แวะก่อนเข้าตลาดได้)</span>
+      <span><a href="https://www.google.com/maps/search/?api=1&query=39+Cafe+by+Arano+%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%B8%E0%B8%81">เปิดใน Google Maps</a></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="top"><h3>6. ทูนหัว ของบ่าว Specialty Coffee</h3><span class="num">6</span></div>
+    <span class="tag new">ใหม่ · สายกาแฟ</span>
+    <p>ร้าน specialty coffee หน้าใหม่ในสามชุก ที่สายกาแฟแชร์กันใน TikTok ช่วงปลายปี 2025–2026 โซนนั่งใหม่ มู้ดดี หลบร้อนได้ ถ้าคุณเป็นคนที่ตัดสินร้านจากเมล็ดและวิธีชง เก็บร้านนี้ไว้แทนร้านวิวสวย</p>
+    <div class="meta">
+      <span><b>เหมาะ</b> สายกาแฟตัวจริง / นั่งทำงานสั้น ๆ</span>
+      <span><b>ควรเช็ก</b> เวลาเปิด–ปิดล่าสุดในเพจร้านก่อนไป</span>
+      <span><a href="https://www.google.com/maps/search/?api=1&query=%E0%B8%97%E0%B8%B9%E0%B8%99%E0%B8%AB%E0%B8%B1%E0%B8%A7+%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B9%88%E0%B8%B2%E0%B8%A7+Specialty+Coffee+%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%B8%E0%B8%81">เปิดใน Google Maps</a></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="top"><h3>7. Studio' Cafe</h3><span class="num">7</span></div>
+    <span class="tag">มินิมอล</span><span class="tag">เปิด 09:00</span>
+    <p>คาเฟ่สีขาวสไตล์มินิมอลกลางต้นไม้ ต.หนองสะเดา อยู่ทางเข้าเดียวกับปลายทางพอดี อาหาร/เครื่องดื่มราคาเริ่มหลักสิบ เหมาะถ้าอยากได้ที่นั่งในร่มเงียบ ๆ แทนร้านวิวทุ่ง</p>
+    <div class="meta">
+      <span><b>เปิด</b> ~09:00–18:00</span>
+      <span><b>ทำเล</b> ต.หนองสะเดา อ.สามชุก</span>
+      <span><a href="https://www.google.com/maps/search/?api=1&query=Studio+Cafe+%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B0%E0%B9%80%E0%B8%94%E0%B8%B2+%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%B8%E0%B8%81">เปิดใน Google Maps</a></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="top"><h3>8. หลังบ้านคาเฟ่</h3><span class="num">8</span></div>
+    <span class="tag">ทุ่งนา</span><span class="tag">เปิด 10:00</span>
+    <p>คาเฟ่กลางทุ่งนา ห่างตลาดร้อยปี ~5 กม. มีซุ้มนั่งหลายแบบ ทั้งโซนห้อยขา โซนติดทุ่งนา และห้องแอร์ เหมาะปิดท้ายด้วยข้าวกลางวันก่อนเข้าที่พัก/จุดหมาย แต่เปิด 10:00 จึงต้องรอหน่อย</p>
+    <div class="meta">
+      <span><b>เปิด</b> 10:00–18:00</span>
+      <span><b>ทำเล</b> ต.หนองผักนาก อ.สามชุก</span>
+      <span><a href="https://www.google.com/maps/search/?api=1&query=%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%B2%E0%B9%80%E0%B8%9F%E0%B9%88+%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%B8%E0%B8%81">เปิดใน Google Maps</a></span>
+    </div>
+  </div>
+
+</div>
+
+<h2>เลือกเป็นชุดตามสไตล์</h2>
+
+<div class="plan">
+  <h3>สายคาเฟ่ + ตลาด (แนะนำ)</h3>
+  <ol>
+    <li><b>954 Cafe'</b> — อาหารเช้าริมน้ำ (08:10)</li>
+    <li><b>ตลาดร้อยปีสามชุก</b> — เดินของกิน (09:20)</li>
+    <li><b>Homie's Cafe</b> — นั่งพัก เนินหญ้า (10:20)</li>
+    <li>เข้าจุดหมาย (11:30)</li>
+  </ol>
+</div>
+
+<div class="plan">
+  <h3>สายกาแฟจริงจัง</h3>
+  <ol>
+    <li><b>39 Café by Arano</b> — เปิด 08:00 กาแฟเข้ม (08:00)</li>
+    <li><b>ทูนหัว ของบ่าว</b> — specialty coffee (09:00)</li>
+    <li><b>ตลาดร้อยปีสามชุก</b> — เดินย่อย (10:00)</li>
+    <li>เข้าจุดหมาย (11:20)</li>
+  </ol>
+</div>
+
+<div class="plan">
+  <h3>สายชิลทุ่งนา ไม่เน้นคนเยอะ</h3>
+  <ol>
+    <li><b>954 Cafe'</b> — เช้าริมน้ำ (08:15)</li>
+    <li><b>Studio' Cafe</b> — มินิมอลเงียบ ๆ (09:30)</li>
+    <li><b>หลังบ้านคาเฟ่</b> — ข้าวกลางวันกลางทุ่ง (10:30)</li>
+    <li>เข้าจุดหมาย (12:00)</li>
+  </ol>
+</div>
+
+<h2>ถ้ามีเวลาต่อหลังจากถึงจุดหมาย</h2>
+<div class="plan">
+  <h3>ต่อขึ้นเหนือ (คนละทางกับกรุงเทพฯ แต่คุ้มถ้าค้างคืน)</h3>
+  <ol>
+    <li><b>THARN (ธาณ)</b> — คาเฟ่สไตล์ญี่ปุ่น/มูจิ อ.เดิมบางนางบวช 08:00–17:00 <b>เปิดเฉพาะเสาร์–อาทิตย์และวันหยุดนักขัตฤกษ์</b> (ร้านล้อมด้วยต้นไม้ ลำธาร น้ำตก)</li>
+    <li><b>วัดเขาดิน</b> — วัดไทยสไตล์ญี่ปุ่นชื่อดังของสุพรรณ</li>
+    <li><b>บึงฉวากเฉลิมพระเกียรติ</b> — อควาเรียม/สวนสัตว์ เปิดกลางวัน เหมาะกับครอบครัว</li>
+  </ol>
+</div>
+
+<div class="warn">
+  <b>อ่านก่อนออกเดินทาง</b><br>
+  · วันจันทร์: 954 Cafe' ปิด — สลับไปเริ่มที่ 39 Café by Arano (เปิด 08:00) แทน<br>
+  · วันพุธ: Homie's Cafe และ Ricker's Cafe ปิด — ใช้ 39 Café หรือ Studio' Cafe แทน<br>
+  · วันธรรมดา: THARN ปิด (เปิดเสาร์–อาทิตย์/นักขัตฤกษ์เท่านั้น)<br>
+  · คาเฟ่เล็กในสุพรรณปรับเวลา/ปิดรายวันบ่อย แนะนำเช็กเพจร้านอีกครั้งเช้าวันเดินทาง
+</div>
+
+<h2>ลิงก์แผนที่ (เปิดใน Google Maps)</h2>
+<p class="lede">
+  ทุกลิงก์เริ่มจาก <b>กรมการค้าต่างประเทศ นนทบุรี</b> และสิ้นสุดที่พิกัด <b>14.781913, 99.974062</b>
+  เปิดแล้วจะเห็นเส้นทางพร้อมหมุด A / B / C ของแต่ละจุดแวะเรียงตามลำดับ
+</p>
+
+<div class="btns">
+  <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%20%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5&destination=14.781913%2C99.974062&waypoints=954%20Cafe'%20%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%8C|%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%B8%E0%B8%81%20100%20%E0%B8%9B%E0%B8%B5|Homie's%20Cafe%20%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%B8%E0%B8%81&travelmode=driving">① เส้นทางหลัก · 954 → ตลาดสามชุก → Homie's</a>
+  <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&origin=%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%20%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5&destination=14.781913%2C99.974062&waypoints=39%20Cafe%20by%20Arano%20%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%B8%E0%B8%81|%E0%B8%97%E0%B8%B9%E0%B8%99%E0%B8%AB%E0%B8%B1%E0%B8%A7%20%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B9%88%E0%B8%B2%E0%B8%A7%20Specialty%20Coffee%20%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%B8%E0%B8%81|%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%B8%E0%B8%81%20100%20%E0%B8%9B%E0%B8%B5&travelmode=driving">② สายกาแฟ · 39 Arano → ทูนหัว → ตลาด</a>
+  <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&origin=%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%20%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5&destination=14.781913%2C99.974062&waypoints=954%20Cafe'%20%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%8C|Studio'%20Cafe%20%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B0%E0%B9%80%E0%B8%94%E0%B8%B2|%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%B2%E0%B9%80%E0%B8%9F%E0%B9%88%20%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%B8%E0%B8%81&travelmode=driving">③ สายชิลทุ่งนา · 954 → Studio' → หลังบ้าน</a>
+  <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&origin=14.781913%2C99.974062&destination=%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%20%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5&waypoints=THARN%20%E0%B8%98%E0%B8%B2%E0%B8%93%20%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A1%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%9A%E0%B8%A7%E0%B8%8A|%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%94%E0%B8%B4%E0%B8%99%20%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5&travelmode=driving">④ ขากลับวันหยุด · THARN → วัดเขาดิน</a>
+</div>
+
+<h2>หมุดรายจุด (กดเพื่อปักหมุดเดี่ยว)</h2>
+<ul class="pins">
+  <li><span>1 · 954 Cafe' (ตลาดเก่าศรีประจันต์)</span><a class="go" href="https://www.google.com/maps/search/?api=1&query=954%20Cafe'%20%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%8C">ปักหมุด</a></li>
+  <li><span>2 · ตลาดเก่าศรีประจันต์</span><a class="go" href="https://www.google.com/maps/search/?api=1&query=%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%8C">ปักหมุด</a></li>
+  <li><span>3 · ตลาดสามชุก 100 ปี</span><a class="go" href="https://www.google.com/maps/search/?api=1&query=%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%B8%E0%B8%81%20100%20%E0%B8%9B%E0%B8%B5">ปักหมุด</a></li>
+  <li><span>4 · Homie's Cafe</span><a class="go" href="https://www.google.com/maps/search/?api=1&query=Homie's%20Cafe%20%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%B8%E0%B8%81">ปักหมุด</a></li>
+  <li><span>5 · 39 Cafe by Arano</span><a class="go" href="https://www.google.com/maps/search/?api=1&query=39%20Cafe%20by%20Arano%20%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%B8%E0%B8%81">ปักหมุด</a></li>
+  <li><span>6 · ทูนหัว ของบ่าว Specialty Coffee</span><a class="go" href="https://www.google.com/maps/search/?api=1&query=%E0%B8%97%E0%B8%B9%E0%B8%99%E0%B8%AB%E0%B8%B1%E0%B8%A7%20%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B9%88%E0%B8%B2%E0%B8%A7%20Specialty%20Coffee%20%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%B8%E0%B8%81">ปักหมุด</a></li>
+  <li><span>7 · Studio' Cafe (หนองสะเดา)</span><a class="go" href="https://www.google.com/maps/search/?api=1&query=Studio'%20Cafe%20%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B0%E0%B9%80%E0%B8%94%E0%B8%B2%20%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%B8%E0%B8%81">ปักหมุด</a></li>
+  <li><span>8 · หลังบ้านคาเฟ่</span><a class="go" href="https://www.google.com/maps/search/?api=1&query=%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%B2%E0%B9%80%E0%B8%9F%E0%B9%88%20%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%B8%E0%B8%81">ปักหมุด</a></li>
+  <li><span>9 · THARN (ธาณ) เดิมบางนางบวช</span><a class="go" href="https://www.google.com/maps/search/?api=1&query=THARN%20%E0%B8%98%E0%B8%B2%E0%B8%93%20%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A1%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%9A%E0%B8%A7%E0%B8%8A">ปักหมุด</a></li>
+</ul>
+<p class="lede" style="margin-top:12px">
+  เคล็ดลับ: เปิดลิงก์ ① บนมือถือแล้วกด “บันทึก/เพิ่มในรายการโปรด” ของแต่ละหมุดไว้ จะเรียกนำทางทีละจุดได้แม้สัญญาณอ่อน
+</p>
+
+<footer>
+  ระยะทาง/เวลาเป็นการประมาณจากเส้นทางขับรถจริง (340 → 321 → 3365) · เวลาเปิด–ปิดรวบรวมจากรีวิวและเพจร้านปี 2025–2026
+  ควรตรวจสอบอีกครั้งก่อนเดินทาง · จัดทำ 16 พ.ย. 2026
+</footer>
+
+</div>
+</body>
+</html>
